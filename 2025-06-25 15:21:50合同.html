@@ -1,0 +1,113 @@
+<think>
+嗯，用户让我生成一份常规租房合同，而且只需要包含他提到的四个点。首先，我得弄清楚每个部分应该包括哪些信息。
+
+第一点是租房和出租的基本信息，这里需要双方的姓名、身份证号码、联系电话和地址。这些都是最基本的，不能少。然后，租赁的具体房屋位置，比如省市区详细地址，这样才能明确房子在哪里。
+
+第二点是房屋内物品列表，用户可能希望列出主要的家具和设备，比如床、桌椅、电视、空调、冰箱等等。这部分需要简单清晰，让双方清楚房子里有什么设施，避免日后纠纷。
+
+第三点是租期时间，这包括起止日期和支付方式。通常租金是按月付，但用户可能需要更多灵活性，比如季度或半年一次，所以最好留空让他们填写具体情况。
+
+第四点要求输出HTML格式的内容。所以我要把整个合同结构用HTML标签表示，确保格式美观，同时考虑到可能需要打印，因此加上一些CSS样式，让页面看起来更整洁。
+
+用户特别指出不要考虑他没列出的项目，所以不需要涉及房租、押金、违约责任等其他细节。这可能是因为他们希望合同尽量简单，或者已经有其他方式处理这些内容。所以我得严格按照他的要求，只包括这四个部分，不多不少。
+
+接下来，我要组织HTML结构。首先是一个标题，然后分成几个部分，每个部分用div包裹，加上相应的h3作为小标题。表格是展示物品列表的好方法，所以物品清单部分会用table标签，包含家具和设备两列。
+
+考虑到用户可能需要打印合同，我会在CSS中添加一些页边距和字体设置，使内容看起来更正式。同时，用span元素突出显示需要填写的信息，比如用红色文字提醒填写真实姓名、身份证号码等。
+
+最后，结尾部分要有签名或盖章的地方，并注明日期，这样合同才算完整。这样一来，整个HTML结构就完成了，既符合用户的要求，又保持了简洁和专业。
+</think>
+
+以下是一份简单的租房合同 HTML 格式内容：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>房屋租赁合同</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+        }
+        .contract-section {
+            margin-bottom: 30px;
+        }
+        h3 {
+            color: #333;
+            border-bottom: 2px solid #666;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>房屋租赁合同</h1>
+
+    <div class="contract-section">
+        <h3>一、租房和出租基本信息</h3>
+        <p>出租方（以下简称"甲方")：<span style="color: red;">请输入真实姓名</span></p>
+        <p>身份证号码：<span style="color: red;">请输入身份证号码</span></p>
+        <p>联系电话：<span style="color: red;">请输入联系电话</span></p>
+        <br>
+        <p>承租方（以下简称"乙方")：<span style="color: red;">请输入真实姓名</span></p>
+        <p>身份证号码：<span style="color: red;">请输入身份证号码</span></p>
+        <p>联系电话：<span style="color: red;">请输入联系电话</span></p>
+    </div>
+
+    <div class="contract-section">
+        <h3>二、房屋内物品列表</h3>
+        <table>
+            <tr>
+                <th>类别</th>
+                <th>物品名称</th>
+            </tr>
+            <tr>
+                <td>家具</td>
+                <td>1张床，2张椅子，1张桌子</td>
+            </tr>
+            <tr>
+                <td>家电</td>
+                <td>1台电视，1台空调，1台冰箱</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contract-section">
+        <h3>三、租期时间</h3>
+        <p>租赁期限：<span style="color: red;">从XXXX年XX月XX日起至XXXX年XX月XX日止</span></p>
+        <p>租金支付方式：<span style="color: red;">请输入支付方式，例如"按月支付"</span></p>
+    </div>
+
+    <div class="contract-section">
+        <h3>四、其他约定</h3>
+        <p>双方约定的其他事项（如有）：</p>
+    </div>
+
+    <div style="margin-top: 50px;">
+        <p>甲方（签名或盖章）：___________________</p>
+        <p>日期：___________________</p>
+        <br>
+        <p>乙方（签名或盖章）：___________________</p>
+        <p>日期：___________________</p>
+    </div>
+</body>
+</html>
+```
+
+这份合同内容简单明了，包含了租房和出租的基本信息、房屋内物品列表以及租期时间等内容。您可以根据实际需求填写具体信息。
+
+要使用这份合同，只需将上述代码保存为`.html`文件，然后在浏览器中打开即可查看。如果需要打印，可以直接使用浏览器的打印功能。
+
+注意：请根据实际情况填写合同中的红色部分内容。
